@@ -20,7 +20,6 @@ description: TODO
 markdown: kramdown
 theme: fundamental
 
-
 # theme configuration
 enabled:
   breadcrumbs: true
@@ -62,7 +61,6 @@ defaults:
       layout: "post"
       author: "YOUR NAME"
       comments: true
-
 
 permalink: pretty
 
