@@ -1,10 +1,89 @@
-title: My blog
-email: chrismetheridge@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  My blog.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "chrisetheridge.github.io" 
+title: My Blog TODO
+author:
+  name: Chris Etheridge 
+  github: chrisetheridge
+
+favicon: false
+
+footer:
+  separator: '|'
+  content: Ⓒ chrisetheridge
+  # Append current year on build
+  year: true
+
+baseurl: ""
+url: "https://chrisetheridge.github.io" 
+
+description: My blog TODO
+
 markdown: kramdown
 theme: fundamental
+
+# theme configuration
+enabled:
+  breadcrumbs: true
+  tags: true
+  comments: false
+  rss: false
+  seo: true
+  social:
+    enabled: true
+    twitter: true
+    facebook: true
+    messenger: false
+    whatsapp: false
+
+# Get your disquas shortname from the disqus admin panel for your blog.
+disqus_shortname: your-forum-shortname
+# Define the colors for social buttons.
+socialBtnsColor: '#69779b'
+
+bio:
+  enabled: true
+  heading: Your Bio Heading
+  subheading: 'Your subheading'
+  img_url: false # 'your-img-url'
+  body: >
+    Your Bio Description Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+
+# installed plugins    
 plugins:
   - jekyll-feed
+  - jekyll-archives
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+# frontend defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      layout: "post"
+      author: "YOUR NAME"
+      comments: true
+
+
+permalink: pretty
+
+# plugins configuration
+
+# Archives
+jekyll-archives:
+  enabled:
+  - year
+  - month
+  - tags
+  layout: 'archive'
+  layouts:
+    tag: 'tag_page'
+    month: month
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
