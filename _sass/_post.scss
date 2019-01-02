@@ -1,0 +1,64 @@
+.post-navigation {
+  margin: 60px auto 40px auto;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  a {
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1rem;
+    border: solid 1px $accent;
+    border-radius: 3px;
+    padding: 10px 20px;
+    &:hover {
+      background: $accent;
+      color: $base;
+    }
+  }
+}
+
+img + em {
+  color: rgba(white, .7);
+  font-size: 1rem;
+  margin-top: -50px;
+  margin-left: 20px;
+  display: block;
+}
+
+.info {
+  margin-bottom: 60px;
+  margin-top: -35px;
+  @media screen and (max-width: $break) {
+    margin-bottom: 40px;
+  }
+}
+
+article {
+  position: relative;
+}
+
+
+
+.share {
+  position: fixed;
+  transform: translateX(-90px);
+  bottom: 50%;
+  a, svg {
+    &:hover {
+      opacity: 1;
+    }
+  }
+  svg {
+    opacity: .3;
+    height: 30px;
+    width: 30px;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin: 8px 0;
+    list-style: none;
+  }
+}

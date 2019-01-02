@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{{ content }}
+<div class="flex">
+  {% include tag-cloud.html %}
+  <!-- Post Loop -->
+  <div>
+    <ul class="post-loop">
+      {% for p in paginator.posts %}
+        {% include item.html %}
+      {% endfor %}
+    </ul>
+    {% include pagination.html %}
+  </div>
+</div>
