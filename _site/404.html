@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/assets/main.css">
+  
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>My Blog TODO | My blog TODO</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="My Blog TODO" />
+<meta name="author" content="Chris Etheridge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My blog TODO" />
+<meta property="og:description" content="My blog TODO" />
+<link rel="canonical" href="http://localhost:4000/404.html" />
+<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta property="og:site_name" content="My Blog TODO" />
+<script type="application/ld+json">
+{"description":"My blog TODO","author":{"@type":"Person","name":"Chris Etheridge"},"@type":"WebPage","url":"http://localhost:4000/404.html","headline":"My Blog TODO","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <header>
+  <!-- <img class="logo" src="/assets/images/logo.svg" alt="Logo"> -->
+  <div class="title"><a href="/">My Blog TODO</a></div>
+  <nav>
+    <ul>
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/archive/">Archive</a></li>
+        
+      
+      
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <div class="container">
+      <h1> Doesn't look like anything to me. </h1>
+<h3>404 Error: Page not found</h3>
+
+<div class="_404">
+  
+<div class="tag-cloud">
+  <h3>Tags</h3>
+  
+</div>
+
+
+  <div class="post-list">
+    <h3>Recent Posts</h3>
+  
+</div>
+</div>
+
+    </div>
+  </main>
+    
+      <a id="about-link" style="font-size: 2rem; position: fixed; right: 20px; z-index: 3; transition: transform 0.1s linear; bottom: 20px; color: #444"><svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path d="M28 52C14.193 52 3 40.807 3 27S14.193 2 28 2s25 11.193 25 25-11.193 25-25 25zm0-25c2.644 0 4.787-2.143 4.787-4.787S30.644 17.426 28 17.426s-4.787 2.143-4.787 4.787S25.356 27 28 27zm.133 2.66c-7.402 0-9.707 4.787-9.707 4.787v2.393H37.84v-2.393s-2.305-4.787-9.707-4.787z" id="b"/>
+    <filter y="-8%" filterUnits="objectBoundingBox" id="a">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+    <use fill="#69779b" xlink:href="#b"/>
+  </g>
+</svg>
+</a>
+
+<div id="info" style="height: 100vh; width: 500px; max-width: 100%; transform: translateX(535px); transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95); background: white; position: fixed; top: 0; right: 0; box-shadow: 2px 2px 4px 1px rgba(20, 20, 20, .5);">
+  <div class="container" style="max-width: 85%">
+    <h1 style="margin-bottom: 1rem;">Your Bio Heading</h1>
+    <h5 style="margin: 0">Your subheading</h5>
+    <p style="line-height: 1.7;">Your Bio Description Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  const link = document.getElementById('about-link');
+  const infoPanel = document.getElementById('info');
+  const main = document.getElementsByTagName('main')[0];
+  link.onclick = () => {
+    link.classList.toggle('open');
+    if (link.classList.contains('open')) {
+      infoPanel.style.transform = 'translateX(0)';
+      link.style.transform = 'rotate(180deg)';
+    } else {
+      infoPanel.style.transform = 'translateX(535px)';
+      link.style.transform = 'rotate(0)';
+    }
+  }
+
+  if (!link.classList.contains('open')){
+    main.onclick = () => {
+      infoPanel.style.transform = 'translateX(535px)';
+      link.classList.toggle('open');
+      link.style.transform = 'rotate(0)';
+    }
+  }
+
+function animateBioLink() {
+  let lastScrollTop = 0;
+  if (window.innerWidth <= 950) {
+    window.onscroll = () => {
+      let currentScrollTop = window.scrollY || document.body.scrollTop;
+      if (currentScrollTop > lastScrollTop) {
+        //console.log('Moving on down!');
+            link.style.transform = 'translateY(200px)';
+            
+        } else {
+        //console.log('Moving on up!');
+            link.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = currentScrollTop;
+    }
+  }
+}
+
+animateBioLink();
+ 
+</script>
+
+    
+  <footer>
+    <p>Ⓒ chrisetheridge | 2019</p>
+</footer>
+
+</body>
+</html>
