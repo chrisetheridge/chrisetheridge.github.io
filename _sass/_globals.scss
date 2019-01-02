@@ -1,0 +1,104 @@
+html {
+    display: flex; //IE 11 Fix for sticky footer but doesn't work..
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  body {
+    font-family: $font;
+    font-size: 1.2rem;
+    color: $textColor;
+    background: $base;
+    @media screen and (max-width: $break) {
+      font-size: 1.2rem;
+    }
+    // sticky footer
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $break) {
+        flex-wrap: wrap-reverse;
+    }
+  }
+  
+  //Structure
+  .container {
+    max-width: 950px;
+    padding: 1em;
+    margin: 0 auto;
+    padding: 5rem 20px;
+    @media screen and (max-width: $break) {
+      padding: 1.5rem 20px;
+    }
+  }
+  
+  hr {
+    border: none;
+    background: rgba($textColor, .2);
+    height: 3px;
+    margin: 30px 0;
+  }
+  
+  img {
+    border-radius: 5px;
+  }
+  
+  // Crumbs
+  
+  .crumbs {
+    padding: 0;
+    margin-top: 2rem;
+    @media screen and (max-width: $break) {
+      font-size: .9rem;
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+  
+  .tag-cloud {
+    margin-right: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    align-items: flex-start;
+    a {
+      display: inline-block;
+      border: solid $accent 1px;
+      border-radius: 3px;
+      padding: 3px 6px;
+      margin-top: 6px;
+      text-decoration: none;
+      &:hover {
+        background: $accent;
+        color: $base;
+      }
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .post-loop {
+      flex: 2;
+  }
+  
+  ._404 {
+   display: flex;
+   justify-content: flex-start;
+  }
+  
+  .post-list {
+   @extend .tag-cloud;
+  }
