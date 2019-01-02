@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.5.1"
+gem "jekyll", "3.5.2"
 gem "fundamental"
 
 gem "github-pages", group: :jekyll_plugins
