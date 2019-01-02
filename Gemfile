@@ -3,6 +3,8 @@ source "https://rubygems.org"
 gem "jekyll", "3.5.1"
 gem "fundamental"
 
+gem "github-pages", group: :jekyll_plugins
+
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
 end
